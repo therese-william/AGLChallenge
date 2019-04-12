@@ -13,7 +13,7 @@ export class RetrievedataService {
     const headers = new HttpHeaders()
         .append('Content-Type', 'application/json');
 
-    return this._http.get<PetOwner[]>("http://agl-developer-test.azurewebsites.net/people.json", {
+    return this._http.get<PetOwner[]>("https://agl-developer-test.azurewebsites.net/people.json", {
         headers: headers
     });
 }
